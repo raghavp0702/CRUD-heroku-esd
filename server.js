@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/user",router);
 
-const port =process.env.PORT || 6070;
+const port =process.env.PORT || 5000;
 
 app.get('/',(req,res)=>{
     res.send("Hello World");
