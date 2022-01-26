@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/user",router);
 
-const port = 5000;
+const port =process.env.PORT || 6070;
 
 app.get('/',(req,res)=>{
     res.send("Hello World");
@@ -20,4 +20,4 @@ mongoose.connect("mongodb://root:root@cluster0-shard-00-00.e4fqf.mongodb.net:270
 
 
 
-app.listen(process.env.PORT || port, ()=>console.log("Server is running on PORT 5000"));
+app.listen(port, ()=>console.log("Server is running on PORT 5000"));
