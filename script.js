@@ -1,6 +1,6 @@
 
 // const api_url = "http://localhost:5000/user"
-const api_url = "https://crud-heroku-esd.herokuapp.com/";
+const api_url = "https://crud-heroku-esd.herokuapp.com";
 function loadData(records = []) {
     var table_data = "";
     for(let i=0; i<records.length; i++) {
